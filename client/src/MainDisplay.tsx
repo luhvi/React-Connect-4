@@ -469,7 +469,7 @@ const MainDisplay = () => {
         <div className="mt-2 h-10">
           {!isPlaying ? (
             <button
-              className="cursor-pointer rounded-full bg-gray-800 px-5 py-2 text-white shadow-lg"
+              className="cursor-pointer rounded-full bg-gray-800 px-5 py-2 text-white shadow-lg transition-colors duration-100 ease-in-out hover:bg-gray-700"
               onClick={() => playAgain()}
             >
               Play again
