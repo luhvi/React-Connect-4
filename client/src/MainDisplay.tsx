@@ -466,13 +466,15 @@ const MainDisplay = () => {
             {draws}
           </h1>
         </div>
-        <div className="mt-2">
-          <button
-            className="cursor-pointer rounded-full bg-gray-800 px-5 py-2 text-white shadow-lg"
-            onClick={() => playAgain()}
-          >
-            Play again
-          </button>
+        <div className="mt-2 h-10">
+          {!isPlaying ? (
+            <button
+              className="cursor-pointer rounded-full bg-gray-800 px-5 py-2 text-white shadow-lg"
+              onClick={() => playAgain()}
+            >
+              Play again
+            </button>
+          ) : null}
         </div>
       </div>
     </div>
